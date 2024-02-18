@@ -1,12 +1,16 @@
 
 # 予約ページ
-- page.js -> Define page content
+- page.js => 新しいページを作成する（例えば、app/about/page.jsは<your-domain>/aboutページを作成する）。
 
-- layout.js -> Define wrapper arond pages
+- layout.js => 兄弟ページやネストされたページをラップする新しいレイアウトを作成する
 
-- not-found.js -> Define "Not Found" fallback page
+- not-found.js => Not Found "エラーのフォールバック・ページ
 
-- error.js -> Define "Error" fallback page
+- error.js => その他のエラーのフォールバックページ
+
+- loading.js => 兄弟ページやネストされたページまたはレイアウトが、データを取得している間に表示されるフォールバックページ
+
+- route.js => APIルート（すなわち、JSXコードを返さず、代わりにJSON形式などのデータを返すページ）を作成できる。
 
 # ページの追加
 - 手打ち URL のアクセスはサーバーサイドのJSを呼び出す
